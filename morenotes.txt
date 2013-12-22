@@ -1,0 +1,12 @@
+<input type="checkbox" id="legend" name="symptoms[]" value="abdominalPain" onClick="doOnClick(this)" /><label for="legend">Abdominal Pain</label>
+
+
+
+INSERT INTO activity (``,``,``,``,``) VALUES (``,``,``,``,``);
+
+INSERT INTO `p4_dontforgetyourcrayons_org`.`activity` (`primaryKey`, `dateAndTime`, `speed`, `miles`, `minutes`, `seconds`) VALUES (NULL, CURRENT_TIMESTAMP, '3.0', '2', '60', '0');
+
+dont forget to modify httpd.conf for apache configuration
+these two lines
+DocumentRoot "c:/wamp/www/p2.dontforgetyourcrayons.org"
+<Directory "c:/wamp/www/p2.dontforgetyourcrayons.org">
