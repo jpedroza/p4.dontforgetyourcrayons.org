@@ -7,9 +7,9 @@ if (mysqli_connect_errno()) {
 	echo "Failed to connect to MySQL: " . mysqli_connect_error();
 } 
 
-//$sts = $_POST[speed].toString();
+
 mysqli_query($connection,"INSERT INTO `p4_dontforgetyourcrayons_org`.`activity` (`primaryKey`, `dateAndTime`, speed, `miles`, `minutes`, `seconds`) 
-VALUES (NULL, CURRENT_TIMESTAMP, $_POST[speed], '12', '58', '27')");
+VALUES (NULL, CURRENT_TIMESTAMP, '$_POST[speed]', $_POST[miles], '$_POST[minutes]', '$_POST[seconds]')");
 
 
 mysqli_close($connection);
