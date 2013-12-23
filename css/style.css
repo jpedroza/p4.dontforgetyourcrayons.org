@@ -1,0 +1,25 @@
+input[type="text"] {
+    font-family: Arial, san-serif;
+	background-color: yellow;
+	font-size: 18px;
+}
+
+#top {
+    font-family: Arial, san-serif;
+	font-size: 19px;
+}
+
+form {
+    font-family: Arial, san-serif;
+	font-size: 18px;
+}
+
+fieldset { 
+    overflow: hidden; 
+    margin-bottom: 5px;
+
+    width: 270px;
+}
+label { float: left; width: 120px; }
+
+input { width: 120px; }

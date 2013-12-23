@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Move Log</title>
+</head>
+<body>
+<p>v9</p>
+
+
+
+
+<script>
+var dtg = new Date();
+var strdtg = dtg.toString(); 
+document.write("hello------" + strdtg);
+
+//var num = 15;
+//var n = num.toString(); 
+//dateFormat(dtg, "dddd, mmmm dS, yyyy, h:MM:ss TT")
+
+</script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body onload="myFunction()">
+
+<p id="demo"></p>
+
+<!-- <button onclick="myFunction()">Try it</button> -->
+
+<script>
+function myFunction()
+{
+var d = new Date();
+var x = document.getElementById("demo");
+x.innerHTML=d.toDateString();
+}
+</script>
+
+</body>
+</html>
+
+var myDate = new Date().toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, "$1")

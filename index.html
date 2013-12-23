@@ -1,13 +1,38 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Move Log</title>
+<title>Activity Log</title>
+<script type='text/javascript' src='js/util.js'></script>
+<link rel='stylesheet' type='text/css' href='css/style.css'>
+<meta charset='UTF-8'>
 </head>
-<body>
-<p>Test Message</p>
-<script>
-var now = new Date();
-dateFormat(now, "dddd, mmmm dS, yyyy, h:MM:ss TT");
-document.write(now);
-</script>
+<body onload="myFunction()">
+<p id="top"></p>
+<hr />
+<form action="dbutil.php" method="get">
+<fieldset>
+	<label for="speed">Speed:</label> 
+	<input type="text" id="speed" value="mph"><br>
+</fieldset>
+
+<fieldset>
+	<label for="miles">Miles:</label> 
+	<input type="text" id="miles" value="miles"><br>
+</fieldset>
+
+<fieldset>
+	<label for="minutes">Minutes:</label>
+	<input type="text" id="minutes" value="minutes"><br>
+</fieldset>
+
+<fieldset>
+	<label for="seconds">Seconds:</label>
+	<input type="text" id="seconds" value="seconds"><br>
+</fieldset>
+
+<input type="submit" value="Log Activity">
+</form> 
+
+
 </body>
 </html>
