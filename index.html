@@ -9,25 +9,27 @@
 <body onload="myFunction()">
 <p id="top"></p>
 <hr />
-<form action="dbutil.php" method="get">
+
+<!-- to protect against sql injection attacks the numeric filter function is called on keyup for text fields-->
+<form action="dbutil.php" method="post">
 <fieldset>
 	<label for="speed">Speed:</label> 
-	<input type="text" id="speed" value="mph"><br>
+	<input type="text" id="speed" value="mph" onKeyUp="numericFilter(this);"><br>
 </fieldset>
 
 <fieldset>
 	<label for="miles">Miles:</label> 
-	<input type="text" id="miles" value="miles"><br>
+	<input type="text" id="miles" value="miles" onKeyUp="numericFilter(this);"><br>
 </fieldset>
 
 <fieldset>
 	<label for="minutes">Minutes:</label>
-	<input type="text" id="minutes" value="minutes"><br>
+	<input type="text" id="minutes" value="minutes" onKeyUp="numericFilter(this);"><br>
 </fieldset>
 
 <fieldset>
 	<label for="seconds">Seconds:</label>
-	<input type="text" id="seconds" value="seconds"><br>
+	<input type="text" id="seconds" value="seconds" onKeyUp="numericFilter(this);"><br>
 </fieldset>
 
 <input type="submit" value="Log Activity">
